@@ -3,6 +3,7 @@ echo "<h1>";
 echo "<center>Frozen</center>";
 echo "<hr />";
 echo "<center><a href = \"test.php\">PHP Testing</a></center>";
+echo "<center><a href = \"vsftpd.conf.works.txt\">vsftpd.conf</a></center>";
 echo "</h1>";
 
 
