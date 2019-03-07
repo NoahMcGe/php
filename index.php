@@ -1,4 +1,11 @@
 <?php
+echo "
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>";
 echo "<h1>";
 echo "<center>Frozen</center>";
 echo "<hr />";
