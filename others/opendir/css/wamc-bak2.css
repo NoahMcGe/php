@@ -1,0 +1,276 @@
+
+body {
+	background-color: #fff;
+	margin: 0px; 
+	padding: 0px;		
+	font-family: system-ui, sans-serif;
+	font-size: 16px;
+	}
+pre{
+	font-family: system-ui, sans-serif;
+	font-size: 16px;
+	color : #4c4c4c;
+}
+
+.imagesize {
+    width: 100%;
+    height: auto;
+}
+.smalltext{
+	font-family: system-ui, sans-serif;
+	font-size: 9px;
+}
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+ font-family: system-ui, sans-serif;
+}
+ 
+.header {
+  color: #000;
+ 
+}
+
+.menu a {
+	color: #000;
+	text-decoration: none;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 1px;
+    margin-bottom: 1px;
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover a:hover{
+    color: #ff7f00;
+}
+.aside {
+    background-color: #fff;
+    padding: 16px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    
+}
+.footer {
+    background-color: #ff7f00;
+    font-size: 18px;
+    font-style: bold;
+  color: #fff;
+}
+.bttn {
+  background-color: #ff7f00;
+    border: none;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 1px;
+    cursor: pointer;
+    
+}
+
+.bttn:hover{
+	background-color:#7c7c7c;
+	 color: #fdf6e3;
+}
+
+.bttn1 {border-radius: 2px;}
+.bttn2 {border-radius: 4px;}
+.bttn3 {border-radius: 8px;}
+.bttn4 {border-radius: 12px;}
+.bttn5 {border-radius: 50%;}
+
+.outline{
+ border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+            font-size:14px;
+               padding: 3px;
+}
+
+.imgfloatleft {
+	float: left;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	.col-p-1 {width: 8.33%;}
+    .col-p-2 {width: 16.66%;}
+    .col-p-3 {width: 25%;}
+    .col-p-4 {width: 33.33%;}
+    .col-p-5 {width: 41.66%;}
+    .col-p-6 {width: 50%;}
+    .col-p-7 {width: 58.33%;}
+    .col-p-8 {width: 66.66%;}
+    .col-p-9 {width: 75%;}
+    .col-p-10 {width: 83.33%;}
+    .col-p-11 {width: 91.66%;}
+    .col-p-12 {width: 100%;}
+	}
+
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src = "img/wamc-logo-monarchs2.png" height = "70px">
+  Today is 03/06/2018</div>
+<div class="row">
+<div class="col-7 col-m-5">
+
+ <div class="row">
+<div class="col-3 col-m-3"> <!-- div 0 -->
+<img src = "img/summer-2018-logo.png" height = "200px" class = "imagesize";>
+</div><!-- end div 0 -->
+<div class="col-9 col-m-9"> <!-- div 0 -->
+<p>
+2018 Summer Conference <br />
+Red Lion Hotels - Richland, WA 99352<br />
+Link to <a href "http://www.redlion.com/richland" class = "bttn bttn2">Red Lion Richland</a><br />
+Hotel Reservations: (509) 946-7611 <br />
+(WAMC Group Code - ATTE0626) <br />
+June 25 - June 29, 2018 (Monday - Friday) <br />
+<img src = "img/star.png" height = "12px" ><a href = "documents/AppliedMath_Spring_2018.pdf" class = "bttn bttn2">Spring 2018 In-Service Registration pdf</a><br />
+<img src = "img/star.png" height = "12px" ><a href = "documents/AppliedMath_Summer_2018.pdf" class = "bttn bttn2">2018 Summer Conference Registration pdf </a> <br />
+<img src = "img/star.png" height = "12px" >40 STEM Clock Hours are available for completion of the Summer Conference. <br />
+<div class = "smalltext">Spring 2018 In-Service Registration pdf - Posted August 2, 2017  <br />2018 Summer Conference Registration pdf - Posted   8/17/17 
+</div>
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-3 col-m-3 outline">
+WESTERN WASHINGTON<br />
+Wednesday, October 4, 2017<br />
+Spring - ESD 113 <br />
+6005 Tyee Drive SW<br />
+Tumwater, WA 98512<br />
+8:30 AM - 3:30 PM (includes lunch)<br />
+<br />
+	</div>
+<div class="col-3 col-m-3 outline">
+EASTERN WASHINGTON <br />
+ - 2018  <br />
+Spokane Community College<br />
+North 1810 Greene Street<br />
+Spokane, WA 99207<br />
+"The Lair" Building #6<br />
+8:30 AM - 3:30 PM (includes lunch) 	<br />
+
+</div>
+<div class="col-3 col-m-3 outline">
+CENTRAL WAHSINGTON <br />
+WINTER<br />
+Friday - February 23, 2018<br />
+8:30 AM - 3:30 PM (includes lunch)   <br />
+YV-TECH<br />
+1120 S. 18th Street<br />
+Yakima, WA  98901<br />
+</div>
+</div>
+<div class="row">
+<div class="col-5 col-m-5 outline">
+*Please visit the FRAMEWORKS LINK for current WAMC Frameworks.<br />
+Algebra 1, Algebra 2 and Geometry have all been updated. <br />
+* Notice the information linked on the CCSS-MATH tab.   <br />
+Common Core Communication Materials and Instructional 	<br /><br />
+	
+	
+</div>
+<div class="col-4 col-m-4 outline">
+CTE (Careers in Technical Education) <br />
+CCSS (Common Core State Standards) <br />
+OSPI (Office of Superintendent of Public Instruction) <br />
+STEM (Science Technology Engineering <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Mathematics)<br />
+</div>
+<p>
+</div>
+
+
+</div>
+
+<div class="col-3 col-m-3 menu">
+  <ul>
+    <li><a href="index.php?v=0">Home</a></li>
+		<li><a href="index.php?v=1" >About Us</a></li>
+		<li><a href="index.php?v=2" >Contact</a></li>
+		<li><a href="index.php?v=3">Registrations</a></li>
+		<li><a href="index.php?v=4">Inservice Locations</a></li>
+		 <li><a href="index.php?v=5">Teachers</a></li>
+          <li><a href="index.php?v=6" >CTE Funding</a></li>
+          <li><a href="index.php?v=7">Frameworks</a></li>
+	      <li><a href="index.php?v=8">Resources(LABS)</a></li>
+	      <li><a href="index.php?v=9">Curriculum</a></li>
+	          <li><a href="index.php?v=10">CCSS - MATH</a></li>
+	  	  <li><a href="index.php?v=11">OSPI-STEM</a></li>
+	  	   <img src = "photos/thumb-monarch-milkweed-KyleStrauss.jpg" height= "250px"> 
+	  	   <img src = "photos/thumb-monarch-caterpillear-KyleStrauss.jpg" height= "250px"><br />
+Photos by Kyle Strauss 
+</div>
+</div>
+<div class="footer">
+		<center>	<br />
+		Washingon Applied Math Council  - Established 1994 
+	<br/><br/>
+		Please contact Ron Noble (State Coordinator) with questions - Rnoble@wa-appliedmath.org
+	<br/><br />
+	</center>
+</div>
+
+</body>
+</html>
