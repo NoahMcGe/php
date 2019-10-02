@@ -1,12 +1,8 @@
+
+
 <html>
 <head>
-<title>*Noah*</title>
-<meta name="viewport" content="width=device-width"><!-- META-->
-<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- META-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"><!-- META-->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="video/changebg_home.js"></script>
+<title>OpenDR-Noah</title>
 <style>
 * {
     box-sizing: border-box;
@@ -119,7 +115,7 @@ $_SESSION['pagename'] = "noah index";
 // turn php off 
 ?>
 	<video autoplay muted loop id="myVideo">
-  <source src="/video/noah1.mp4" type="video/mp4" style= z-index: -1;>
+  <source src="/video/cat2.mp4" type="video/mp4" style= z-index: -1;>
   Your browser does not support HTML5 video.
 </video>
 
@@ -156,7 +152,7 @@ $filename = array();
 $imgname = array();
 if ($handle = opendir('.')) {
   while (false !== ($file = readdir($handle))){
-    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" &&  $file != ".f.html" &&  $file != ".h.html" &&  $file != ".404.html" ){
+    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" ){
       $imgname[$count] = "file.png";
       			if (false === strpos((string)$file ,'.'))$imgname[$count] = "folder.png";
       $filelist[$count] = $file;
@@ -196,8 +192,8 @@ for ($i = 0; $i < sizeof($filelist);$i++){
   echo "<img src = '/img/".$imgname[$i]."'s  style = 'width:20px;'>";
   echo "<a href = '"."$filelist[$i]"."'>"."$filename[$i]"." </a><br>";
 }
-//(Back up button)  echo "<br /><a href = '"."$filelist[$parent]"."'>"."<img src = '/img/back.png' style='height:30px;'></a>";
-//(Back up button)  echo "&nbsp;<a href = '"."$filelist[$parent]"."'>"."$filename[$parent]"."</a>";
+echo "<br /><a href = '"."$filelist[$parent]"."'>"."<img src = '/img/back.png' style='height:30px;'></a>";
+echo "&nbsp;<a href = '"."$filelist[$parent]"."'>"."$filename[$parent]"."</a>";
 ?>
 <br /> <br />
 
