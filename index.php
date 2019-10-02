@@ -1,9 +1,4 @@
-<?php
-//session_start();
-//$_SESSION['pagename'] = "resources_index";
-//include 'db/db.php'; include 'db/error.php';
-//include 'db/pushhits.php';
-?>
+
 
 <html>
 <head>
@@ -116,11 +111,11 @@ green     #859900
 // this is php  
 session_start();// start a session 
 $_SESSION['pagename'] = "noah index";
-include "db/pushhits.php";
+
 // turn php off 
 ?>
 	<video autoplay muted loop id="myVideo">
-  <source src="/github/noah/NoahMcGe.github.io/paper/mt_light_loop.mp4" type="video/mp4" style= z-index: -1;>
+  <source src="/video/mt_light_loop.mp4" type="video/mp4" style= z-index: -1;>
   Your browser does not support HTML5 video.
 </video>
 
@@ -139,7 +134,7 @@ function myFunction() {
 }
 </script>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/img/logo.png" style="padding:1rem;height:150px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/img/noah-logo.png" style="padding:1rem;height:150px;">
 <div class = "location" style="padding-left:4rem;padding-top:4rem;padding-bottom:3rem;padding-right:4rem;">
 	<div class="op">
 
@@ -205,7 +200,6 @@ echo "&nbsp;<a href = '"."$filelist[$parent]"."'>"."$filename[$parent]"."</a>";
 	</div>
 </div>
 <h1><center>
-<a href="db/" target = "_blank">Hits</a>
 </center></h1>
 </body>
 </html>

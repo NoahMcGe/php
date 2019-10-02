@@ -1,13 +1,12 @@
-<?php
-//session_start();
-//$_SESSION['pagename'] = "resources_index";
-//include 'db/db.php'; include 'db/error.php';
-//include 'db/pushhits.php';
-?>
-
 <html>
 <head>
-<title>OpenDR-Noah</title>
+<title>*Noah*</title>
+<meta name="viewport" content="width=device-width"><!-- META-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- META-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"><!-- META-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="video/changebg_home.js"></script>
 <style>
 * {
     box-sizing: border-box;
@@ -80,7 +79,7 @@ a:hover{
   top:110px;
   left:10%;
   font-family: system-ui , sans-serif;
-  background-color: rgba(255, 255, 255, 0.9) ;
+  background-color: rgba(255, 255, 255, 0.4) ;
   //opacity: 0.5;
   color: #2aa198;
   border: solid 5px;
@@ -112,8 +111,15 @@ green     #859900
 </style>
 </head>
 <body>
+	<?php  
+// this is php  
+session_start();// start a session 
+$_SESSION['pagename'] = "noah index";
+
+// turn php off 
+?>
 	<video autoplay muted loop id="myVideo">
-  <source src="/github/noah/NoahMcGe.github.io/paper/mt_light_loop.mp4" type="video/mp4" style= z-index: -1;>
+  <source src="/video/noah1.mp4" type="video/mp4" style= z-index: -1;>
   Your browser does not support HTML5 video.
 </video>
 
@@ -132,7 +138,7 @@ function myFunction() {
 }
 </script>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/img/logo.png" height = "100px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/img/noah-logo.png" style="padding:1rem;height:150px;">
 <div class = "location" style="padding-left:4rem;padding-top:4rem;padding-bottom:3rem;padding-right:4rem;">
 	<div class="op">
 
@@ -150,7 +156,7 @@ $filename = array();
 $imgname = array();
 if ($handle = opendir('.')) {
   while (false !== ($file = readdir($handle))){
-    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" ){
+    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" &&  $file != ".f.html" &&  $file != ".h.html" &&  $file != ".404.html" ){
       $imgname[$count] = "file.png";
       			if (false === strpos((string)$file ,'.'))$imgname[$count] = "folder.png";
       $filelist[$count] = $file;
@@ -190,13 +196,14 @@ for ($i = 0; $i < sizeof($filelist);$i++){
   echo "<img src = '/img/".$imgname[$i]."'s  style = 'width:20px;'>";
   echo "<a href = '"."$filelist[$i]"."'>"."$filename[$i]"." </a><br>";
 }
-echo "<br /><a href = '"."$filelist[$parent]"."'>"."<img src = '/img/back.png' style='height:30px;'></a>";
-echo "&nbsp;<a href = '"."$filelist[$parent]"."'>"."$filename[$parent]"."</a>";
+//(Back up button)  echo "<br /><a href = '"."$filelist[$parent]"."'>"."<img src = '/img/back.png' style='height:30px;'></a>";
+//(Back up button)  echo "&nbsp;<a href = '"."$filelist[$parent]"."'>"."$filename[$parent]"."</a>";
 ?>
 <br /> <br />
 
 	</div>
 </div>
-
+<h1><center>
+</center></h1>
 </body>
 </html>

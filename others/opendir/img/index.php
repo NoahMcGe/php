@@ -1,6 +1,8 @@
+
+
 <html>
 <head>
-<title>*Noah*</title>
+<title>OpenDR-Noah</title>
 <style>
 * {
     box-sizing: border-box;
@@ -113,7 +115,7 @@ $_SESSION['pagename'] = "noah index";
 // turn php off 
 ?>
 	<video autoplay muted loop id="myVideo">
-  <source src="/video/mt_light_loop.mp4" type="video/mp4" style= z-index: -1;>
+  <source src="/video/house.mp4" type="video/mp4" style= z-index: -1;>
   Your browser does not support HTML5 video.
 </video>
 
@@ -150,7 +152,7 @@ $filename = array();
 $imgname = array();
 if ($handle = opendir('.')) {
   while (false !== ($file = readdir($handle))){
-    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" &&  $file != ".f.html" &&  $file != ".h.html" &&  $file != ".404.html" ){
+    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" ){
       $imgname[$count] = "file.png";
       			if (false === strpos((string)$file ,'.'))$imgname[$count] = "folder.png";
       $filelist[$count] = $file;
