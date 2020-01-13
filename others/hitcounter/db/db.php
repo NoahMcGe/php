@@ -1,6 +1,6 @@
 <?php
    $hostName = "localhost";
    $databaseName = "stream";
-   $username = "blee";
-   $password = "blee";
+   $username = "ifb";
+   $password = "hero";
 ?>
